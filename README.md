@@ -1,7 +1,7 @@
 ### Документация
 * [План автоматизации тестирования покупки тура](https://github.com/swesda/Diplom/blob/main/docs/Plan.md)
-* [Отчет по итогам автоматизированного тестирования]
-* [Отчет по итогам автоматизации]
+* [Отчет по итогам автоматизированного тестирования](https://github.com/swesda/Diplom/blob/main/docs/Report.md)
+* [Отчет по итогам автоматизации](https://github.com/swesda/Diplom/blob/main/docs/Summary.md)
 
 ### Авто-тесты
 1. Склонировать репозиторий: https://github.com/swesda/Diplom.git

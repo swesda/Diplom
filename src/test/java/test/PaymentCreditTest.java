@@ -34,8 +34,7 @@ public class PaymentCreditTest {
     @Test
     void shouldPaymentCreditCardWithStatusApproved(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -50,8 +49,7 @@ public class PaymentCreditTest {
     @Test
     void shouldPaymentCreditWithStatusDeclined(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getDeclinedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -66,8 +64,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditWithAnotherCard(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getInvalidCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -80,8 +77,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditCardNumberWithNulls(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getCardNumberWithNulls();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -94,8 +90,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditWithEmptyFieldCardNumber(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getCardWithoutNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -108,8 +103,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditWithInvalidMonth(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getInvalidMonth();
         val year = DataHelper.getYear();
@@ -122,8 +116,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditWithEmptyFieldMonth(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getEmptyMonth();
         val year = DataHelper.getYear();
@@ -136,8 +129,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditMonthWithNulls(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonthWithNulls();
         val year = DataHelper.getYear();
@@ -150,8 +142,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditWithLastYear(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getLastYear();
@@ -164,8 +155,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditWithEmptyFieldYear() {
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getEmptyYear();
@@ -178,8 +168,7 @@ public class PaymentCreditTest {
     @Test
     void shouldSuccessByCreditCardExpiryDate(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getCardExpiryDate();
@@ -192,8 +181,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditAfterCardExpiryDate(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getAfterCardExpiryDate();
@@ -206,8 +194,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditCvccvvWithTwoNumbers(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -220,8 +207,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditCvccvvWithOneNumber(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -234,8 +220,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditWithEmptyFieldCvccvv(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -248,8 +233,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditOwnerWithOneLetter(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -262,8 +246,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditOwnerWithRusLetters(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -276,8 +259,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditOwnerWithNumbers(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -290,8 +272,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditOwnerWithSpecialSymbols(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
@@ -304,8 +285,7 @@ public class PaymentCreditTest {
     @Test
     void shouldDontSuccessByCreditWithEmptyFieldOwner(){
         val dashboardPage = new DashboardPage();
-        val paymentFormCredit = new PaymentFormCredit();
-        dashboardPage.getCreditPayment();
+        val paymentFormCredit = dashboardPage.getCreditPayment();
         val cardNumber = DataHelper.getApprovedCardNumber();
         val month = DataHelper.getMonth();
         val year = DataHelper.getYear();
